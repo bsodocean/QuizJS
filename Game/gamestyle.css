@@ -1,0 +1,81 @@
+.choice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 2rem;
+    max-width: 60rem;
+    transition: all 1s;
+    margin: 0 auto 2rem;
+    border: 1px solid black;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    transition: 1s all;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: scale(1);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #00FF00;
+}
+
+.incorrect {
+    background-color: #B22222;
+}
+
+/* Head */
+
+#hud {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#question {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+#progressBarFill {
+    width: 0%;
+    height: 100%;
+    background-color: #00FF00;
+}
+
+@media screen and  (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}

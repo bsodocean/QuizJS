@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d5fefd;
+    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrap-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 5px;
+    width: 25rem;
+    padding: 1rem;
+    margin: 20px 0 0 0;
+    font-size: 1.7rem;
+    transition: 0.3s all;
+}
+
+.fa-solid {
+    margin-left: 10px;
+    color: orange;
+}
+
+.btn:hover {transform: scale(1.1); transition: 0.3s all;}
+
+/* End page */
+
+.end-form-container {
+    padding: 1rem;
+}
+
+input {
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: black;
+}
+
+/* Highscores */
